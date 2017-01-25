@@ -1,5 +1,4 @@
 ## Problem #19 - Counting Sundays ##
-from math import floor
 
 # 01 Jan 1900 was Monday
 
@@ -33,4 +32,4 @@ for year in range(1901, 2001):
 
 if days % 7 == 0: #in case the day after the last day is Sunday
 	sundays_on_first -= 1
-print sundays_on_first
+print "There were __%i__ Sundays as the first day of the month between Jan/01/1901 and Dec/31/2000" % sundays_on_first
