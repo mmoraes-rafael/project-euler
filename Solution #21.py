@@ -2,6 +2,9 @@ IS_AMICABLE = 1
 NOT_AMICABLE = 0
 
 def sum_divs(number):
+	""" 
+		Returns the sum of the divisors of "num" 
+	"""
 	soma = 1
 	for i in range(2, int(number/2)+1):
 		if number % i == 0:
@@ -9,6 +12,9 @@ def sum_divs(number):
 	return soma
 
 def is_amicable(num):
+	"""
+		Returns if num is amicable or not
+	"""
 	result = sum_divs(num)
 	if sum_divs(result) == num and result != num:
 		return IS_AMICABLE
